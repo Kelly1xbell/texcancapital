@@ -1,26 +1,56 @@
-# TexCan Capital Static Website
+# TexCan Capital Website
 
-This is a static HTML/CSS website ready to upload to GitHub Pages, Cloudflare Pages, or Netlify.
+This folder contains the polished static website files for TexCan Capital.
 
-## Files
+## Files included
 
-- `index.html` - Main website page
-- `style.css` - Website styling
-- `script.js` - Placeholder for future enhancements
-- `images/logo.png` - TexCan Capital logo
+- `index.html` — main webpage
+- `style.css` — design and mobile layout
+- `script.js` — mobile menu and subtle scroll animation
+- `logo.png` — TexCan Capital logo
+- `README.md` — upload instructions
 
-## GitHub Pages Setup
+## How to update your live GitHub Pages site
 
-1. Create a new GitHub repository.
-2. Upload all files from this folder.
-3. Go to **Settings > Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/root` folder.
-6. Save.
+1. Download and unzip this folder.
+2. Open your GitHub repository for the TexCan Capital website.
+3. Click **Add file** → **Upload files**.
+4. Drag these files into GitHub:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `logo.png`
+   - `README.md`
+5. Choose **Commit changes**.
+6. Wait 1–3 minutes for GitHub Pages to redeploy.
+7. Open `https://www.texcancapital.com`.
+8. If the old design still appears, refresh the browser or open in an incognito/private window.
 
-Your site will be live at your GitHub Pages URL. You can then connect your GoDaddy domain in GitHub Pages settings.
+## Important
 
-## Contact Info Included
+Upload the files directly to the main/root level of your repository. Do not upload the entire folder as a folder.
+
+Correct layout:
+
+```text
+index.html
+style.css
+script.js
+logo.png
+README.md
+```
+
+Incorrect layout:
+
+```text
+texcan_polished_site/
+  index.html
+  style.css
+  script.js
+  logo.png
+```
+
+## Contact details used
 
 Phone: (512) 784-9952  
 Email: Info@TexCanCapital.com
