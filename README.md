@@ -1,36 +1,26 @@
-# TexCan Capital Website - Root Upload Version
+# TexCan Capital Website
 
-This version matches the current GitHub layout where all files are uploaded directly to the repository root.
+This is the cleaned, GitHub Pages-ready version.
 
-## Correct GitHub repo layout
-
-Your repository should contain these files at the top/root level:
-
-- `CNAME`
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-- `hero-skyline.png`
-- `about-home.png`
-- `header-logo.png`
-- `favicon.png`
-
-## Remove these old/duplicate files if present
-
-- `style.css`
-- `logo.png`
-
-They are from the older version and are no longer needed.
+## Files included
+- index.html
+- style.css
+- script.js
+- logo.png
+- README.md
 
 ## Upload instructions
+1. Download and unzip the ZIP file.
+2. Open the unzipped folder.
+3. Upload the files inside the folder to the root of your GitHub repository.
+4. Commit the changes.
+5. Wait for GitHub Pages to redeploy.
+6. Visit https://www.texcancapital.com.
 
-1. Download and unzip this package.
-2. In GitHub, open your repository.
-3. Delete old duplicate files: `style.css` and `logo.png`.
-4. Upload the files from this package directly to the repo root.
-5. Keep your existing `CNAME` file.
-6. Commit the changes.
-7. Wait 1–2 minutes for GitHub Pages to redeploy.
-8. Refresh `https://www.texcancapital.com`.
+Do not upload the outer folder itself. Upload the files directly so GitHub shows:
 
+index.html
+style.css
+script.js
+logo.png
+README.md
