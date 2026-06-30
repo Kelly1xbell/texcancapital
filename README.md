@@ -1,35 +1,36 @@
-# TexCan Capital Website Files
+# TexCan Capital Website - Root Upload Version
 
-This version fixes the earlier issues:
-- higher-quality hero skyline image
-- higher-quality about-section home image
-- no cut-off baked-in screenshot images
-- live HTML/CSS text and layout instead of using one giant screenshot
-- stats section removed
-- responsive layout for mobile and desktop
+This version matches the current GitHub layout where all files are uploaded directly to the repository root.
 
-## Files included
+## Correct GitHub repo layout
+
+Your repository should contain these files at the top/root level:
+
+- `CNAME`
 - `index.html`
 - `styles.css`
 - `script.js`
-- `assets/hero-skyline.png`
-- `assets/about-home.png`
-- `assets/header-logo.png`
-- `assets/favicon.png`
+- `README.md`
+- `hero-skyline.png`
+- `about-home.png`
+- `header-logo.png`
+- `favicon.png`
 
-## How to upload to GitHub
+## Remove these old/duplicate files if present
+
+- `style.css`
+- `logo.png`
+
+They are from the older version and are no longer needed.
+
+## Upload instructions
+
 1. Download and unzip this package.
-2. Open your GitHub repository for the website.
-3. Delete the old website files from the repo (or replace them).
-4. Upload **the contents of this folder** to the repo root:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - the entire `assets` folder
-5. Commit the changes.
-6. Wait 1–2 minutes for GitHub Pages to redeploy.
-7. Refresh `www.texcancapital.com`.
+2. In GitHub, open your repository.
+3. Delete old duplicate files: `style.css` and `logo.png`.
+4. Upload the files from this package directly to the repo root.
+5. Keep your existing `CNAME` file.
+6. Commit the changes.
+7. Wait 1–2 minutes for GitHub Pages to redeploy.
+8. Refresh `https://www.texcancapital.com`.
 
-## Important
-Upload the files **inside this folder** to the repo root.
-Do **not** upload the outer folder itself.
