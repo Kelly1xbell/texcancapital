@@ -1,10 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const menuButton = document.querySelector('.menu-button');
+const mobileNav = document.querySelector('.mobile-nav');
+
+if (menuButton && mobileNav) {
+  menuButton.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+  });
+
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
     });
   });
-});
+}
