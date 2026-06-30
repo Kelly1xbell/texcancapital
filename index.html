@@ -10,13 +10,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo.png" />
   <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
+  <header class="site-header">
+    <div class="container nav-wrap">
       <a href="#top" class="brand">TexCan Capital</a>
-      <nav>
+      <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -26,46 +29,45 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-inner">
-        <img src="logo.png" alt="TexCan Capital logo" class="logo" />
+      <div class="container hero-content">
+        <img src="logo.png" alt="TexCan Capital logo" class="hero-logo" />
+        <p class="eyebrow">Central Texas Real Estate Investment</p>
         <h1>Real Estate Investment Solutions</h1>
-        <div class="gold-line"></div>
-        <p class="tagline">Creative Financing. Strategic Acquisitions. Long-Term Value.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="tel:+15127849952">☎ (512) 784-9952</a>
-          <a class="btn secondary" href="mailto:Info@TexCanCapital.com">✉ Info@TexCanCapital.com</a>
+        <p class="hero-text">Creative financing, strategic acquisitions, seller financing, BRRRR investments, and joint venture opportunities.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="tel:+15127849952">Call (512) 784-9952</a>
+          <a class="btn btn-outline" href="mailto:Info@TexCanCapital.com">Info@TexCanCapital.com</a>
         </div>
       </div>
     </section>
 
-    <section id="services" class="services section-dark">
+    <section id="services" class="section services">
       <div class="container">
-        <p class="eyebrow">What We Do</p>
-        <h2>Investment Solutions That Create Value</h2>
-        <div class="gold-line small"></div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="icon">⌂</div>
+        <p class="eyebrow center">What We Do</p>
+        <h2 class="section-title center">Investment Solutions That Create Value</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon">⌂</span>
             <h3>Real Estate Acquisitions</h3>
             <p>We acquire residential and commercial properties with strong potential.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">🤝</div>
+          <article class="card">
+            <span class="card-icon">◆</span>
             <h3>Creative Financing</h3>
-            <p>Flexible deal structures for sellers, investors, and partners.</p>
+            <p>Flexible structures for sellers, investors, and partners with unique goals.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">$</div>
+          <article class="card">
+            <span class="card-icon">$</span>
             <h3>Seller Financing</h3>
-            <p>Win-win solutions designed for long-term success and security.</p>
+            <p>Win-win deal structures designed around long-term value and security.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">↗</div>
+          <article class="card">
+            <span class="card-icon">↗</span>
             <h3>BRRRR Investments</h3>
-            <p>Buy, rehab, rent, refinance, and repeat strategies to build wealth.</p>
+            <p>Buy, rehab, rent, refinance, and repeat strategies to build durable wealth.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">👥</div>
+          <article class="card">
+            <span class="card-icon">◎</span>
             <h3>Joint Ventures</h3>
             <p>Partner with us on profitable real estate investment opportunities.</p>
           </article>
@@ -73,40 +75,53 @@
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container about-grid">
+    <section id="about" class="section about">
+      <div class="container split">
         <div>
           <p class="eyebrow">About TexCan Capital</p>
-          <h2>Building Wealth Through Smart Real Estate</h2>
-          <div class="gold-line left"></div>
+          <h2 class="section-title">Building Wealth Through Smart Real Estate</h2>
           <p>TexCan Capital is a real estate investment company based in Central Texas. We help homeowners, investors, and partners create value through creative solutions, strategic acquisitions, and long-term investments.</p>
           <p>Our mission is simple: build strong relationships, deliver results, and create lasting value for our clients and partners.</p>
         </div>
-        <div class="image-card" aria-label="Austin skyline style graphic">
-          <div class="skyline">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-          </div>
+        <div class="feature-panel">
+          <h3>Focused. Flexible. Value-driven.</h3>
+          <ul>
+            <li>Residential and commercial opportunities</li>
+            <li>Creative deal structures</li>
+            <li>Long-term investment strategy</li>
+            <li>Central Texas market focus</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <p class="eyebrow">Let's Work Together</p>
-        <h2>Ready to Discuss Your Next Opportunity?</h2>
-        <div class="gold-line small"></div>
+    <section id="contact" class="section contact">
+      <div class="container center">
+        <p class="eyebrow center">Let's Work Together</p>
+        <h2 class="section-title center">Ready to Discuss Your Next Opportunity?</h2>
         <p>Get in touch today to see how we can help.</p>
-        <div class="contact-row">
-          <a href="tel:+15127849952">☎ (512) 784-9952</a>
-          <span class="divider"></span>
-          <a href="mailto:Info@TexCanCapital.com">✉ Info@TexCanCapital.com</a>
+        <div class="button-row center-row">
+          <a class="btn btn-primary" href="tel:+15127849952">(512) 784-9952</a>
+          <a class="btn btn-dark" href="mailto:Info@TexCanCapital.com">Info@TexCanCapital.com</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">© 2026 TexCan Capital, LLC. All rights reserved.</div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="TexCan Capital logo" class="footer-logo" />
+        <p>Real Estate Investment Solutions</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+15127849952">(512) 784-9952</a></p>
+        <p><a href="mailto:Info@TexCanCapital.com">Info@TexCanCapital.com</a></p>
+        <p>Central Texas</p>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 TexCan Capital, LLC. All rights reserved.</div>
   </footer>
 
   <script src="script.js"></script>
